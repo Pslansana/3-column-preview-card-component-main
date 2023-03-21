@@ -1,0 +1,113 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    width:  60%;
+    display: flex;
+    flex-wrap:  nowrap;
+    margin: 50px auto;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend Deca;
+    box-sizing: content-box;
+}
+.titleArea h1{
+    font-family: Big Shoulders Display;
+    padding: 15px;
+}
+.firstCard{
+    background-color:hsl(31, 77%, 52%);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.firstCard .learnMoreBtn a{
+    color: hsl(31, 77%, 52%);
+    display: block;
+}
+.firstCard  .learnMoreBtn a:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid  hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(31, 77%, 52%) ;
+}
+.secondCard{
+    background-color: hsl(184, 100%, 22%);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.secondCard .learnMoreBtn a{
+    color: hsl(184, 100%, 22%);
+}
+.secondCard  .learnMoreBtn a:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid  hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(184, 100%, 22%);
+}
+.thirdCard{
+    background-color: hsl(179, 100%, 13%);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.thirdCard .learnMoreBtn a{
+    color: hsl(179, 100%, 13%);
+}
+.thirdCard .learnMoreBtn a:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid  hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(179, 100%, 13%);
+    /* padding: -5px; */
+}
+.contentArea{
+    padding: 15px;
+}
+.learnMoreBtn{
+    height: 100px;
+    display: flex;
+    
+}
+.learnMoreBtn a{
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 25px;
+    background-color: hsl(0, 0%, 95%);
+    display: inline-block;
+    border-radius: 27px;
+    text-align: center;
+}
+/* ATTRIBUTION */
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+/* RESPONSIVE DESIGN */
+    @media screen and (max-width: 375px) {
+        .main-container {
+          display: flex;
+          flex-direction: column;
+          margin: 50px auto;
+          width: 85%;
+          box-sizing: border-box;
+        }
+        .firstCard{
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0;
+        }
+        .thirdCard{
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 10px;
+        }
+      }
